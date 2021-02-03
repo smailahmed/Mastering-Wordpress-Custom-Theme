@@ -1,6 +1,8 @@
 <?php
   // Include NavWalker Class For Bootstrap Navigation Menu
   require_once('wp-bootstrap-navwalker.php');
+  // Add Featured Image Support
+  add_theme_support('post-thumbnails'); 
   // Function To Add My Custom Styles
   function custom_styles () {
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() 
