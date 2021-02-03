@@ -1,4 +1,6 @@
 <?php
+  // Include NavWalker Class For Bootstrap Navigation Menu
+  require_once('wp-bootstrap-navwalker.php');
   // Function To Add My Custom Styles
   function custom_styles () {
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() 
@@ -32,7 +34,21 @@
   add_action('wp_enqueue_scripts', 'custom_scripts');
   // Add Custom Menu Support
   function register_custom_menu () {
-    register_nav_menu('bootstrap-menu', __('Navigation Bar'));
+    // Register Custom Menus
+    register_nav_menus(array(
+      'bootstrap-menu' => 'Navigation Bar',
+      'footer-menu'    => 'Footer Menu'
+    ));
   }
   add_action('init', 'register_custom_menu');
+  // Add Bootstrap Navigation Bar
+  function bootstrap_menu () {
+    wp_nav_menu(array(
+      'theme_location' => 'bootstrap-menu',
+      'menu_class'     => 'nav navbar-nav',
+      'container'      => false,
+      'depth'          => 2,
+      'walker'         => new WP_Bootstrap_Navwalker()
+    ));
+  }
 ?>

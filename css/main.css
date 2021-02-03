@@ -1,3 +1,8 @@
+/* Start Navbar */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+/* End Navbar */
 /* Start Footer */
 .footer {
   background-color: #333;
