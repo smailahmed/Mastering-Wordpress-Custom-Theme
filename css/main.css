@@ -1,0 +1,11 @@
+/* Start Footer */
+.footer {
+  background-color: #333;
+  color: #EEE;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* End Footer */
