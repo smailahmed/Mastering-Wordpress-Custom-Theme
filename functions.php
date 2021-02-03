@@ -30,4 +30,9 @@
   // Add Actions
   add_action('wp_enqueue_scripts', 'custom_styles');
   add_action('wp_enqueue_scripts', 'custom_scripts');
+  // Add Custom Menu Support
+  function register_custom_menu () {
+    register_nav_menu('bootstrap-menu', __('Navigation Bar'));
+  }
+  add_action('init', 'register_custom_menu');
 ?>
