@@ -53,4 +53,13 @@
       'walker'         => new WP_Bootstrap_Navwalker()
     ));
   }
+  // Customize The Excerpt Word Length & Read More Dots
+  function extend_excerpt_length ($length) {
+    return 65;
+  }
+  add_filter('excerpt_length', 'extend_excerpt_length');
+  function excerpt_change_dots ($more) {
+    return ' ...';
+  }
+  add_filter('excerpt_more', 'excerpt_change_dots');
 ?>
