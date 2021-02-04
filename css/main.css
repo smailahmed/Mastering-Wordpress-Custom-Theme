@@ -1,6 +1,7 @@
 /* Start Main Ruels */
 body {
-  background-color: "EEE";
+  background-color: #EEE;
+  padding-bottom: 64px;
 }
 /* End Main Rules */
 /* Start Navbar */
@@ -47,5 +48,44 @@ body {
 }
 .main-post i {
   color: #999;
+}
+.post-pagination {
+  margin: 0 auto 30px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+}
+.post-pagination a,
+.post-pagination span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFF;
+  border-radius: 5px;
+  transition: all .4s ease-in-out;
+}
+.post-pagination a:first-child,
+.post-pagination span:first-child {
+  float:left;
+  margin-left: 15px;
+}
+.post-pagination a:last-child,
+.post-pagination span:last-child {
+  float:right;
+  margin-right: 15px;
+}
+.post-pagination span {
+  opacity: .5;
+  cursor: not-allowed;
+}
+.post-pagination .fa-chevron-left {
+  margin-right: 10px;
+}
+.post-pagination .fa-chevron-right {
+  margin-left: 10px;
+}
+.post-pagination a:hover {
+  background-color:  #333;
+  color: #FFF;
+  text-decoration: none;
 }
 /* End Posts */

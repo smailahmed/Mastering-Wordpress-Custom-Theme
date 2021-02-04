@@ -23,10 +23,10 @@
                   <?php comments_popup_link('0 Comments', 'One Comment', '% Comments', 'Comment-url', 'Comments Disabled'); ?>
                 </span>
                 <?php the_post_thumbnail('', ['class' => 'img-fluid img-thumbnail', 'title' => 'Post Image']) ?>
-                <p class="post-content">
+                <div class="post-content">
                   <!-- <?php the_content('Read More') ?>  --> <!-- Using More Tag -->
                   <?php the_excerpt() ?>                      <!-- Using The Excerpt -->
-                </p>
+                </div>
                 <hr>
                 <p class="post-categories">
                   <i class="fa fa-tags fa-fw"></i> <?php the_category(', ') ?>
@@ -44,8 +44,20 @@
             </div>
           <?php
           }
-          
         }
+        echo "<div class='clearfix'></div>";
+        echo '<div class="post-pagination">';
+        if (get_previous_posts_link()) {
+          previous_posts_link('<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i> Prev');
+        } else {
+          echo '<span class="previous-span">Prev</span>';
+        }
+        if (get_next_posts_link()) {
+          next_posts_link('Next <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>');
+        } else {
+          echo '<span class="next-span">Next</span>';
+        }
+        echo '</div>';
       ?>
   </div>
 </div>
