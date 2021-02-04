@@ -20,72 +20,146 @@ body {
   width: 100%;
 }
 /* End Footer */
-/* Start Posts */
-.main-post {
+/* Start Main Post */
+.home-page .main-post {
   padding: 15px;
   background-color: #FFF;
   border: 1px solid #d8d8d8;
   margin-bottom: 30px;
 }
-.main-post h3 {
+.home-page .main-post h3 {
   margin: 0 0 10px;
   font-weight: bold;
   color: #777;
   letter-spacing: -1px;
 }
-.main-post .post-author,
-.main-post .post-date,
-.main-post .post-comments {
+.home-page .main-post .post-author,
+.home-page .main-post .post-date,
+.home-page .main-post .post-comments {
   font-size: 12px;
 }
-.main-post img {
+.home-page .main-post img {
   display: block;
   margin: 10px 0 10px;
 }
-.main-post .post-content {
+.home-page .main-post .post-content {
   line-height: 1.7;
   color: #888;
 }
-.main-post i {
+.home-page .main-post i {
   color: #999;
 }
-.post-pagination {
+.home-page .post-pagination {
   margin: 0 auto 30px;
   overflow: hidden;
   text-align: center;
   padding: 0;
 }
-.post-pagination a,
-.post-pagination span {
+.home-page .post-pagination a,
+.home-page .post-pagination span {
   display: inline-block;
   padding: 10px 20px;
   background-color: #FFF;
   border-radius: 5px;
   transition: all .4s ease-in-out;
 }
-.post-pagination a:first-child,
-.post-pagination span:first-child {
+.home-page .post-pagination a:first-child,
+.home-page .post-pagination span:first-child {
   float:left;
   margin-left: 15px;
 }
-.post-pagination a:last-child,
-.post-pagination span:last-child {
+.home-page .post-pagination a:last-child,
+.home-page .post-pagination span:last-child {
   float:right;
   margin-right: 15px;
 }
-.post-pagination span {
+.home-page .post-pagination span {
   opacity: .5;
   cursor: not-allowed;
 }
-.post-pagination .fa-chevron-left {
+.home-page .post-pagination .fa-chevron-left {
   margin-right: 10px;
 }
-.post-pagination .fa-chevron-right {
+.home-page .post-pagination .fa-chevron-right {
   margin-left: 10px;
 }
-.post-pagination a:hover {
+.home-page .post-pagination a:hover {
   background-color:  #333;
   color: #FFF;
   text-decoration: none;
 }
-/* End Posts */
+/* End Main Post */
+/* Start Single Post */
+.single-page .main-post {
+  position: relative;
+  padding: 15px;
+  background-color: #FFF;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 30px;
+}
+.single-page .single-post .post-edit-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #EEE;
+  border-radius: 0 0 0 10px;
+}
+.single-page .single-post .post-edit-link i {
+  color: #336ab7;
+  margin-left: 5px;
+}
+.single-page .main-post h3 {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #777;
+  letter-spacing: -1px;
+}
+.single-page .main-post .post-author,
+.single-page .main-post .post-date,
+.single-page .main-post .post-comments {
+  font-size: 12px;
+}
+.single-page .main-post img {
+  display: block;
+  margin: 10px 0 10px;
+}
+.single-page .main-post .post-content {
+  line-height: 1.8;
+  color: #888;
+}
+.single-page .main-post i {
+  color: #999;
+}
+.single-page .post-pagination {
+  margin: 0 auto 30px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0;
+}
+.single-page .post-pagination a,
+.single-page .post-pagination span {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFF;
+  border-radius: 5px;
+  transition: all .4s ease-in-out;
+}
+.single-page .post-pagination a:first-child,
+.single-page .post-pagination span:first-child {
+  float:left;
+}
+.single-page .post-pagination a:last-child,
+.single-page .post-pagination span:last-child {
+  float:right;
+}
+.single-page .post-pagination span {
+  opacity: .5;
+  cursor: not-allowed;
+}
+.single-page .post-pagination a:hover {
+  background-color:  #333;
+  color: #FFF;
+  text-decoration: none;
+}
+/* End Single Post */

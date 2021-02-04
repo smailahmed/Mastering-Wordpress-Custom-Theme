@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container home-page">
   <div class="row">
       <?php
         if (have_posts()) {// Check If There's Posts
@@ -48,26 +48,17 @@
         echo "<div class='clearfix'></div>";
         echo '<div class="post-pagination">';
         if (get_previous_posts_link()) {
-          previous_posts_link('<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i> Prev');
+          previous_posts_link('<i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i> New Articles');
         } else {
-          echo '<span class="previous-span">Prev</span>';
+          echo '<span class="previous-span">New Articles</span>';
         }
         if (get_next_posts_link()) {
-          next_posts_link('Next <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>');
+          next_posts_link('Old Articles <i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i>');
         } else {
-          echo '<span class="next-span">Next</span>';
+          echo '<span class="next-span">Old Articles</span>';
         }
         echo '</div>';
       ?>
   </div>
 </div>
 <?php get_footer(); ?>
-<!-- 
-<div class="main-post">
-    <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora et laboriosam deserunt, odit repellendus quasi hic consequuntur accusamus odio.</p>
-    <hr>
-    <p class="categories">
-      <i class="fa fa-tags fa-fw"></i> 
-      HTML, Test, Coding, Security</p>
-</div>
--->
