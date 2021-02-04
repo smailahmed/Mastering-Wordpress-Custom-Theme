@@ -1,5 +1,5 @@
     <div class="footer text-center">
-      copyright &copy; 2021 GHEXE
+      copyright &copy; <?php echo date('Y');?> <?php bloginfo('name'); ?>
     </div>
     <?php wp_footer(); ?>
   </body>
