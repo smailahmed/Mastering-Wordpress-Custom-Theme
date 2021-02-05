@@ -163,6 +163,26 @@ body {
   text-decoration: none;
 }
 /* End Single Post */
+/* Start Author Information */
+.author-info-container {
+  background-color: #FFF;
+  padding: 15px;
+}
+.author-info h4 {
+  margin: 12px 0 10px 0;
+  font-weight: bold;
+  color: #676767;
+  font-size: 26px;
+}
+.author-info h4 .nickname {
+  color: #1068a0;
+}
+.author-info p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #777;
+}
+/* End Author Information */
 /* Start Comments List */
 .comments-list ul,
 .comments-list ol {
