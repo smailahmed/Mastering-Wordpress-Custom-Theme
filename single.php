@@ -61,6 +61,8 @@
       echo '<span class="next-span">Old Article: None</span>';
     }
     echo '</div>';
+    echo "<hr class='comment-separator'/>";
+    comments_template();
   ?>
 </div>
 <?php get_footer() ?>
