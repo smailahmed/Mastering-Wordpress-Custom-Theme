@@ -46,6 +46,31 @@
       }
     }
     echo "<div class='clearfix'></div>"; ?>
+    <?php
+    // Use WP_Query To Get Random Posts From Same Category
+    $random_posts_arguments = array(
+      'post_per_page'       => 3,
+      'orderby'             => 'rand',
+      'category__in'        => wp_get_post_categories(get_queried_object_id()),
+      'post__not_in'        => array(get_queried_object_id())
+    );
+    $random_posts = new WP_Query($random_posts_arguments);
+    if ($random_posts->have_posts()) {
+      while ($random_posts->have_posts()) {
+        $random_posts->the_post() ?>
+        <div class="author-posts">
+          <h3 class="post-title">
+            <a href="<?php the_permalink() ?>">
+              <?php the_title() ?>
+            </a>
+          </h3>
+          <hr/>
+        </div>
+      <?php
+      }
+    }
+    wp_reset_postdata(); // Reset Loop Query
+    ?>
     <div class="author-info-container">
       <div class="row">
         <div class="col-md-2">
