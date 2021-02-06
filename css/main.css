@@ -185,6 +185,18 @@ body {
   color: #FFF;
   text-decoration: none;
 }
+.single-page .bypostauthor {
+  position: relative;
+}
+.single-page .bypostauthor:after {
+  content: 'Author';
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #dcdcdc;
+}
 /* End Single Post */
 /* Start Author Information */
 .author-info-container {
