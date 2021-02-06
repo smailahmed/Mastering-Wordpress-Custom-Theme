@@ -57,8 +57,13 @@
         } else {
           echo '<span class="next-span">Old Articles</span>';
         }
-        echo '</div>';
-      ?>
+        echo '</div>'; ?>
+        <div class="pagination-numbers">
+          <?php 
+            // Set Numbering Pagination
+            echo numbering_pagination();
+          ?>
+        </div>
   </div>
 </div>
 <?php get_footer(); ?>

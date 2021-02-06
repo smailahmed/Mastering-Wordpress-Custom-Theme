@@ -66,4 +66,21 @@
     return ' ...';
   }
   add_filter('excerpt_more', 'excerpt_change_dots');
+  // Numbering Pagination
+  function numbering_pagination () {
+    global $wp_query;                               // Make WP_Query Global
+    $all_pages = $wp_query->max_num_pages;          // Get All Posts
+    $current_page = max(1, get_query_var('paged')); // Get Current Page
+    if ($all_pages > 1) {
+      return paginate_links(array(
+        'base'     => get_pagenum_link() . '%_%',
+        'format'   => '?paged=%#%',
+        'current'  => $current_page,
+        'mid-size' => 3,
+        'end-size' => 3,
+        'prev_text'=> __("<<"),
+        'next_text'=> __(">>"),
+      ));
+    }
+  }
 ?>
