@@ -112,6 +112,36 @@ body {
   text-decoration: none;
 }
 /* End Main Post */
+/* Start Category Page */
+.category-information {
+  background-color: #FFF;
+  margin: 25px 15px;
+  border: 1px solid #d8d8d8;
+}
+.category-information h1 {
+  margin: 20px 0;
+  font-weight: bold;
+  color: #9c9c9c;
+}
+.category-information .category-description p {
+  font-size: 18px;
+  color: #777;
+  line-height: 88px;
+  margin: 0;
+}
+.category-information .cat-stats {
+  line-height: 88px;
+  color: #a9a9a9;
+}
+/* End Category Page */
+/* Start Networking Category */
+.networking-category .post-title {
+  margin-top: 7px !important;
+}
+.networking-category .post-content {
+  margin-top: 8px;
+}
+/* End Networking Category */
 /* Start Single Post */
 .single-page .main-post {
   position: relative;

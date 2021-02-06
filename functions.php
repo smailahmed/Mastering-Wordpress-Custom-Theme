@@ -55,10 +55,12 @@
   }
   // Customize The Excerpt Word Length & Read More Dots
   function extend_excerpt_length ($length) {
-    if (is_author()) {  // Inside Author Page
-      return 40;
-    } else {            // On Other Pages
-      return 60;
+    if (is_author()) {             // Inside Author Page
+      return 30;
+    } else if (is_category()) {    // Inside Category Page
+      return 50;
+    } else {                       // On Other Pages
+      return 80;
     }
   }
   add_filter('excerpt_length', 'extend_excerpt_length');

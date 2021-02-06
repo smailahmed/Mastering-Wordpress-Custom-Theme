@@ -1,6 +1,22 @@
 <?php get_header(); ?>
 <div class="container home-page">
   <div class="row">
+    <div class="category-information text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="category-title"><?php single_cat_title() ?></h1>
+        </div>
+        <div class="col-md-4">
+          <div class="category-description"><?php echo category_description() ?></div>
+        </div>
+        <div class="col-md-4">
+          <div class="cat-stats">
+            <span>Articles: 20</span>
+            <span>Comments: 100</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <?php
       if (have_posts()) {// Check If There's Posts
         while (have_posts()) {

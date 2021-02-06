@@ -1,6 +1,22 @@
 <?php get_header(); ?>
 <div class="container home-page">
   <div class="row">
+    <div class="category-information text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <h1 class="category-title"><?php single_cat_title() ?></h1>
+        </div>
+        <div class="col-md-4">
+          <div class="category-description"><?php echo category_description() ?></div>
+        </div>
+        <div class="col-md-4">
+          <div class="cat-stats">
+            <span>Articles: 20</span>
+            <span>Comments: 100</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <?php
       if (have_posts()) {// Check If There's Posts
         while (have_posts()) {
@@ -22,7 +38,6 @@
                 <i class="fa fa-comments-o fa-fw"></i>
                 <?php comments_popup_link('0 Comments', 'One Comment', '% Comments', 'Comment-url', 'Comments Disabled'); ?>
               </span>
-              <?php the_post_thumbnail('', ['class' => 'img-fluid img-thumbnail', 'title' => 'Post Image']) ?>
               <div class="post-content">
                 <!-- <?php the_content('Read More') ?>  --> <!-- Using More Tag -->
                 <?php the_excerpt() ?>                      <!-- Using The Excerpt -->
@@ -30,15 +45,6 @@
               <hr>
               <p class="post-categories">
                 <i class="fa fa-tags fa-fw"></i> <?php the_category(', ') ?>
-              </p>
-              <p class="post-tags">
-                <?php 
-                  if (has_tag()) {
-                    the_tags();
-                  } else {
-                    echo 'Tags: There\'s No Tags';
-                  }
-                ?>
               </p>
             </div>
           </div>
