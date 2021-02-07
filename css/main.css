@@ -478,3 +478,13 @@ body {
   margin-bottom: 40px;
 }
 /* End 404 Page */
+/* Start Breadcrumb */
+.breadcrumbs-holder {
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+}
+.breadcrumbs-holder .breadcrumb {
+  margin-bottom: 0;
+  padding: 15px;
+}
+/* End Breadcrumb */

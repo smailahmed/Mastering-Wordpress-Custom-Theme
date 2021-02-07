@@ -1,4 +1,6 @@
-<?php get_header() ?>
+<?php get_header();
+  include(get_template_directory() . '/includes/breadcrumb.php'); // Include Breadcrumb
+?>
 <div class="container single-page">
   <?php
     if (have_posts()) {
