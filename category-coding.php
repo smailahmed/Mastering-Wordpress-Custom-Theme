@@ -69,12 +69,12 @@
       ?>
       </div>
       <div class="col-md-3">
-        <?php
-        // Use Sidebar
-        if (is_active_sidebar('main-sidebar')) {
-          dynamic_sidebar('main-sidebar');
-        }
-        ?>
+        <div class="coding-sidebar">
+          <?php
+          // Use Sidebar
+          get_sidebar('coding');
+          ?>
+        </div>
       </div>
       <div class="pagination-numbers">
         <?php 

@@ -142,6 +142,25 @@ body {
   margin-top: 8px;
 }
 /* End Networking Category */
+/* Start Coding Category */
+.sidebar-coding .widget {
+  background-color: #FFF;
+  border: 1px solid #d8d8d8;
+  margin-bottom: 15px;
+}
+.sidebar-coding .widget-title {
+  margin: 0;
+  padding: 10px;
+  background-color: #42a4d0;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sidebar-coding .widget-content {
+  padding: 10px;
+  color: #969696;
+}
+/* End Coding Category */
 /* Start Single Post */
 .single-page .main-post {
   position: relative;
