@@ -101,9 +101,11 @@
   }
   add_action('widgets_init', 'main_sidebar');
   // Remove Paragraph Element From Posts
+/*
   function remove_paragraph($contnet) {
     remove_filter('the_content', 'wpautop'); // wpautop: WordPress Auto Paragraph
     return $content;
   }
   add_filter('the_content', 'remove_paragraph', 0);
+*/
 ?>
