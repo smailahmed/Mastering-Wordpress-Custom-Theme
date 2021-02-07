@@ -11,7 +11,7 @@
     </li>
     <li class="breadcrumb-item">
       <!-- Escape URL And HTML Tags For Security -->
-      <a href="<?php esc_url(get_category_link($all_cats[0]->term_id)) ?>">
+      <a href="<?php echo esc_url(get_category_link($all_cats[0]->term_id)) ?>">
         <?php echo esc_html($all_cats[0]->name) ?>
       </a>
     </li>
